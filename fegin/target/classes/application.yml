@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: fegin-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/  #注册中心地址
+  instance:
+    hostname: localhost
+    instance-id: http://localhost:8083
+server:
+  port: 8756
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+command:
+execution:
+isoltion:
+thread:
+timeoutInMilliseconds: 500

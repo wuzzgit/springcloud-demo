@@ -10,7 +10,7 @@ eureka:
     instance-id: http://localhost:8081
 server:
   port: 8198
-#网管
+#网管test
 zuul:
   routes:
     api-a:
